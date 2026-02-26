@@ -1,0 +1,53 @@
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-image: url(../IMAGES/HEADER/taylor-smith-aDZ5YIuedQg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.logo{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.select{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* ===== CART ===== */
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 28px;
+}
+
+.cart a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.45);
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart a:hover {
+    background: var(--red);
+    border-color: var(--red);
+    color: var(--white);
+}
