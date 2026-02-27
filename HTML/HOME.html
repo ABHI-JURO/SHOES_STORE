@@ -4,41 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME PAGE</title>
-
-    <!-- Font Awesome for cart icon -->
+    <title>AIVAULT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="../css/HOME.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <div class="top-bar">
-
-        <!-- LOGO -->
         <div class="logo">
-            <a href="HOME.html">AI<span>KICKS</span></a>
+            <a href="HOME.html">AI<span>VAULT</span></a>
         </div>
-
-        <!-- NAV LINKS -->
         <nav class="select">
             <a href="">Sports</a>
             <a href="">Trekking</a>
             <a href="">Sneakers</a>
             <a href="">New Collection</a>
         </nav>
-
-        <!-- CART -->
         <div class="cart">
-            <a href="CART.html">
+            <a href="cart.html">
                 <i class="fa-solid fa-bag-shopping"></i>
-                cart
+                Cart
             </a>
         </div>
-
     </div>
 
-</body>
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section">
 
+        <div class="section-header">
+            <h2 class="section-title">New <span>Arrivals</span></h2>
+            <a href="" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe1.jpg" alt="Air Force Running">
+                    <span class="badge">NEW</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Air Force Running</h3>
+                    <p class="product-price">₹4,999</p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe2.jpg" alt="Trail Blazer Pro">
+                    <span class="badge sale">SALE</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Trail Blazer Pro</h3>
+                    <p class="product-price">₹3,499 <s class="old-price">₹5,000</s></p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe3.jpg" alt="Urban Stepper">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Urban Stepper</h3>
+                    <p class="product-price">₹5,999</p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe4.jpg" alt="Summit Trekker">
+                    <span class="badge">NEW</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Summit Trekker</h3>
+                    <p class="product-price">₹6,499</p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe5.jpg" alt="Court Classic">
+                    <span class="badge sale">SALE</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Court Classic</h3>
+                    <p class="product-price">₹2,999 <s class="old-price">₹4,200</s></p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="../IMAGES/PRODUCTS/shoe6.jpg" alt="Phantom Elite">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Phantom Elite</h3>
+                    <p class="product-price">₹7,999</p>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
 </html>
