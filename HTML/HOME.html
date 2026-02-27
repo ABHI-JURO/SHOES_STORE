@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIVAULT</title>
+    <title>KICKVAULT — Sneakers & Sports Shoes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/HOME.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ===== HEADER ===== -->
     <div class="top-bar">
         <div class="logo">
-            <a href="HOME.html">AI<span>VAULT</span></a>
+            <a href="HOME.html">KICK<span>VAULT</span></a>
         </div>
         <nav class="select">
             <a href="">Sports</a>
@@ -24,14 +24,64 @@
         </nav>
         <div class="cart">
             <a href="cart.html">
-                <i class="fa-solid fa-bag-shopping"></i>
-                Cart
+                <i class="fa-solid fa-bag-shopping"></i> Cart
             </a>
         </div>
     </div>
 
-    <!-- PRODUCTS SECTION -->
-    <section class="products-section">
+    <!-- ===== PROMO BANNER STRIP ===== -->
+    <div class="promo-strip">
+        <div class="promo-track">
+            <!-- Duplicate items so the scroll loops seamlessly -->
+            <span class="promo-item">Free Shipping on Orders Above ₹999</span>
+            <span class="promo-item">New Collection Just Dropped</span>
+            <span class="promo-item">Easy 30-Day Returns</span>
+            <span class="promo-item">Use Code KICK10 for 10% Off</span>
+            <span class="promo-item">Free Shipping on Orders Above ₹999</span>
+            <span class="promo-item">New Collection Just Dropped</span>
+            <span class="promo-item">Easy 30-Day Returns</span>
+            <span class="promo-item">Use Code KICK10 for 10% Off</span>
+        </div>
+    </div>
+
+    <!-- ===== CATEGORIES SECTION ===== -->
+    <section class="categories-section reveal">
+
+        <div class="section-header">
+            <h2 class="section-title">Shop by <span>Category</span></h2>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card">
+                <img src="../IMAGES/CATEGORIES/sports.jpg" alt="Sports">
+                <div class="category-label">
+                    <h3>Sports</h3>
+                    <span>Explore →</span>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../IMAGES/CATEGORIES/trekking.jpg" alt="Trekking">
+                <div class="category-label">
+                    <h3>Trekking</h3>
+                    <span>Explore →</span>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../IMAGES/CATEGORIES/sneakers.jpg" alt="Sneakers">
+                <div class="category-label">
+                    <h3>Sneakers</h3>
+                    <span>Explore →</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section class="products-section reveal">
 
         <div class="section-header">
             <h2 class="section-title">New <span>Arrivals</span></h2>
@@ -40,7 +90,6 @@
 
         <div class="products-grid">
 
-            <!-- Card 1 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe1.jpg" alt="Air Force Running">
@@ -55,7 +104,6 @@
                 </button>
             </div>
 
-            <!-- Card 2 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe2.jpg" alt="Trail Blazer Pro">
@@ -70,7 +118,6 @@
                 </button>
             </div>
 
-            <!-- Card 3 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe3.jpg" alt="Urban Stepper">
@@ -84,7 +131,6 @@
                 </button>
             </div>
 
-            <!-- Card 4 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe4.jpg" alt="Summit Trekker">
@@ -99,7 +145,6 @@
                 </button>
             </div>
 
-            <!-- Card 5 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe5.jpg" alt="Court Classic">
@@ -114,7 +159,6 @@
                 </button>
             </div>
 
-            <!-- Card 6 -->
             <div class="product-card">
                 <div class="product-img-wrap">
                     <img src="../IMAGES/PRODUCTS/shoe6.jpg" alt="Phantom Elite">
@@ -130,6 +174,88 @@
 
         </div>
     </section>
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="newsletter-section reveal">
+        <h2>Stay in the <span>Loop</span></h2>
+        <p>Get exclusive deals, new drops and early access — straight to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="button">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="HOME.html" class="footer-logo">KICK<span>VAULT</span></a>
+                <p>Premium footwear for every terrain. Built for those who move with purpose.</p>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Shop Column -->
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Trekking</a></li>
+                    <li><a href="">Sneakers</a></li>
+                    <li><a href="">New Collection</a></li>
+                    <li><a href="">Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Column -->
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Returns</a></li>
+                    <li><a href="">Size Guide</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="">support@kickvault.in</a></li>
+                    <li><a href="">+91 98765 43210</a></li>
+                    <li><a href="">Dehradun, Uttarakhand</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 KICKVAULT. All rights reserved.</p>
+            <p>Made with ❤️ in India</p>
+        </div>
+    </footer>
+
+    <!-- ===== SCROLL REVEAL SCRIPT ===== -->
+    <script>
+        // Watches sections with class="reveal" and adds "visible" when they enter the screen
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
