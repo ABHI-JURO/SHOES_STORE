@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KICKVAULT — Sneakers & Sports Shoes</title>
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Our Stylesheet -->
     <link rel="stylesheet" href="../css/HOME.css">
 </head>
 
@@ -17,22 +21,22 @@
             <a href="HOME.html">KICK<span>VAULT</span></a>
         </div>
         <nav class="select">
-            <a href="">Sports</a>
-            <a href="">Trekking</a>
-            <a href="">Sneakers</a>
-            <a href="">New Collection</a>
+            <a href="#categories">Sports</a>
+            <a href="#categories">Trekking</a>
+            <a href="#categories">Sneakers</a>
+            <a href="#products">New Collection</a>
         </nav>
         <div class="cart">
             <a href="cart.html">
                 <i class="fa-solid fa-bag-shopping"></i> Cart
             </a>
+            <span class="cart-count" id="cartCount">0</span>
         </div>
     </div>
 
     <!-- ===== PROMO BANNER STRIP ===== -->
     <div class="promo-strip">
         <div class="promo-track">
-            <!-- Duplicate items so the scroll loops seamlessly -->
             <span class="promo-item">Free Shipping on Orders Above ₹999</span>
             <span class="promo-item">New Collection Just Dropped</span>
             <span class="promo-item">Easy 30-Day Returns</span>
@@ -45,15 +49,13 @@
     </div>
 
     <!-- ===== CATEGORIES SECTION ===== -->
-    <section class="categories-section reveal">
-
+    <section class="categories-section reveal" id="categories">
         <div class="section-header">
             <h2 class="section-title">Shop by <span>Category</span></h2>
         </div>
-
         <div class="categories-grid">
 
-            <div class="category-card">
+            <div class="category-card" onclick="scrollToProducts()">
                 <img src="../IMAGES/CATEGORIES/sports.jpg" alt="Sports">
                 <div class="category-label">
                     <h3>Sports</h3>
@@ -61,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="scrollToProducts()">
                 <img src="../IMAGES/CATEGORIES/trekking.jpg" alt="Trekking">
                 <div class="category-label">
                     <h3>Trekking</h3>
@@ -69,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="scrollToProducts()">
                 <img src="../IMAGES/CATEGORIES/sneakers.jpg" alt="Sneakers">
                 <div class="category-label">
                     <h3>Sneakers</h3>
@@ -81,13 +83,11 @@
     </section>
 
     <!-- ===== PRODUCTS SECTION ===== -->
-    <section class="products-section reveal">
-
+    <section class="products-section reveal" id="products">
         <div class="section-header">
             <h2 class="section-title">New <span>Arrivals</span></h2>
-            <a href="" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#products" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-
         <div class="products-grid">
 
             <div class="product-card">
@@ -99,7 +99,7 @@
                     <h3 class="product-name">Air Force Running</h3>
                     <p class="product-price">₹4,999</p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Air Force Running')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -113,7 +113,7 @@
                     <h3 class="product-name">Trail Blazer Pro</h3>
                     <p class="product-price">₹3,499 <s class="old-price">₹5,000</s></p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Trail Blazer Pro')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -126,7 +126,7 @@
                     <h3 class="product-name">Urban Stepper</h3>
                     <p class="product-price">₹5,999</p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Urban Stepper')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -140,7 +140,7 @@
                     <h3 class="product-name">Summit Trekker</h3>
                     <p class="product-price">₹6,499</p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Summit Trekker')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -154,7 +154,7 @@
                     <h3 class="product-name">Court Classic</h3>
                     <p class="product-price">₹2,999 <s class="old-price">₹4,200</s></p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Court Classic')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -167,7 +167,7 @@
                     <h3 class="product-name">Phantom Elite</h3>
                     <p class="product-price">₹7,999</p>
                 </div>
-                <button class="add-to-cart">
+                <button class="add-to-cart" onclick="addToCart(this, 'Phantom Elite')">
                     <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                 </button>
             </div>
@@ -176,20 +176,20 @@
     </section>
 
     <!-- ===== NEWSLETTER SECTION ===== -->
-    <section class="newsletter-section reveal">
+    <section class="newsletter-section reveal" id="newsletter">
         <h2>Stay in the <span>Loop</span></h2>
         <p>Get exclusive deals, new drops and early access — straight to your inbox.</p>
         <div class="newsletter-form">
-            <input type="email" placeholder="Enter your email address">
-            <button type="button">Subscribe</button>
+            <input type="email" id="newsletterInput" placeholder="Enter your email address">
+            <button type="button" onclick="subscribeNewsletter()">Subscribe</button>
         </div>
+        <p class="newsletter-msg" id="newsletterMsg"></p>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-grid">
 
-            <!-- Brand Column -->
             <div class="footer-brand">
                 <a href="HOME.html" class="footer-logo">KICK<span>VAULT</span></a>
                 <p>Premium footwear for every terrain. Built for those who move with purpose.</p>
@@ -201,19 +201,17 @@
                 </div>
             </div>
 
-            <!-- Shop Column -->
             <div class="footer-col">
                 <h4>Shop</h4>
                 <ul>
-                    <li><a href="">Sports</a></li>
-                    <li><a href="">Trekking</a></li>
-                    <li><a href="">Sneakers</a></li>
-                    <li><a href="">New Collection</a></li>
-                    <li><a href="">Sale</a></li>
+                    <li><a href="#categories">Sports</a></li>
+                    <li><a href="#categories">Trekking</a></li>
+                    <li><a href="#categories">Sneakers</a></li>
+                    <li><a href="#products">New Collection</a></li>
+                    <li><a href="#products">Sale</a></li>
                 </ul>
             </div>
 
-            <!-- Help Column -->
             <div class="footer-col">
                 <h4>Help</h4>
                 <ul>
@@ -224,7 +222,6 @@
                 </ul>
             </div>
 
-            <!-- Contact Column -->
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul>
@@ -235,27 +232,20 @@
             </div>
 
         </div>
-
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>© 2026 KICKVAULT. All rights reserved.</p>
             <p>Made with ❤️ in India</p>
         </div>
     </footer>
 
-    <!-- ===== SCROLL REVEAL SCRIPT ===== -->
-    <script>
-        // Watches sections with class="reveal" and adds "visible" when they enter the screen
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+    <!-- Fixed UI elements -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <div class="toast" id="toast"></div>
 
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
+    <!-- Our JS — at the bottom so HTML loads first -->
+    <script src="../js/HOME.js"></script>
 
 </body>
 </html>
