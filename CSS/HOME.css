@@ -28,6 +28,16 @@ body {
     background-color: var(--background-color);
 }
 
+/* ====== wrap -- container ====== */
+
+.wrap{
+    /* == LAYOUT: Center content, set max width == */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1540px;
+}
+
 /* ====== hero-header ====== */
 
 .hero-header{
@@ -37,6 +47,7 @@ body {
     background-size: cover;
     background-position: 50% 57%;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 /* ====== navigation bar ====== */
