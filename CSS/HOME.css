@@ -1,5 +1,77 @@
+/*
+===========================
+HOME PAGE CSS
+===========================
+*/
+
+* {
+    /* == RESET: Remove default browser styles == */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* == VARIABLES: Global colors, fonts & sizes == */
+    --primary-color: ;
+    --secondary-color: ;
+    --background-color: ;
+    --text-color: ;
+    
+}
+
+
+/* ====== navigation bar / header ====== */
 .nav-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+/* ====== logo ====== */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding: 0 3rem;
+}
+
+.logo a{
+    font-family: 'bebas neue', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    text-decoration: none;
+}
+
+.logo a span{
+    
+}
+
+/* ====== main-pages ====== */
+
+.main-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-pages a{
+    text-decoration: none;
+}
+
+/* ====== cart ====== */
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart a{
+    text-decoration: none;
 }
