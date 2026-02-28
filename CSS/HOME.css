@@ -13,24 +13,42 @@ HOME PAGE CSS
 
 :root {
     /* == VARIABLES: Global colors, fonts & sizes == */
-    --primary-color: ;
-    --secondary-color: ;
-    --background-color: ;
-    --text-color: ;
+    --primary-color: #000000;
+    --secondary-color: #f8c211;
+    --background-color: #9E9E9E;
+    --text-color: #f8f8f8;
     --primary-font: 'bebas neue', sans-serif;
     
 }
 
+/* ====== body styles ====== */
 
-/* ====== navigation bar / header ====== */
+body {
+    /* == BASE STYLES: Set background == */
+    background-color: var(--background-color);
+}
+
+/* ====== hero-header ====== */
+
+.hero-header{
+    display: flex;
+    height: 90vh;
+    background-image: url('../IMAGES/HEADER/header-img6.jpg');
+    background-size: cover;
+    background-position: 50% 57%;
+    background-repeat: no-repeat;
+}
+
+/* ====== navigation bar ====== */
 .nav-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: grey;
+    width: 100%;
     height: 5rem;
     padding: 0 0.5rem;
+    background-color: transparent;
 }
 
 /* ====== logo ====== */
@@ -46,9 +64,14 @@ HOME PAGE CSS
 .logo a{
     font-family: var(--primary-font);
     font-size: 3rem;
+    color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px; 
     text-decoration: none;
+}
+
+.logo a span{
+    color: var(--secondary-color);
 }
 
 /* ====== main-pages ====== */
@@ -66,8 +89,10 @@ HOME PAGE CSS
     font-family: var(--primary-font);
     text-transform: uppercase;
     font-size: 1.1rem;
-    letter-spacing: 1px;
-    text-decoration: none;  
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-decoration: none; 
+    color: var(--text-color); 
 }
 
 /* ====== cart ====== */
@@ -86,7 +111,7 @@ HOME PAGE CSS
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid grey;
     border-radius: 5px;
     padding: 0.2rem 0.8rem;
 }
