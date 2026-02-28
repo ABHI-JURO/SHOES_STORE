@@ -17,6 +17,7 @@ HOME PAGE CSS
     --secondary-color: ;
     --background-color: ;
     --text-color: ;
+    --primary-font: 'bebas neue', sans-serif;
     
 }
 
@@ -41,15 +42,11 @@ HOME PAGE CSS
 }
 
 .logo a{
-    font-family: 'bebas neue', sans-serif;
+    font-family: var(--primary-font);
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 1px; 
     text-decoration: none;
-}
-
-.logo a span{
-    
 }
 
 /* ====== main-pages ====== */
@@ -58,10 +55,17 @@ HOME PAGE CSS
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 3rem;
+    background-color: lightblue;
+    gap: 30px;
 }
 
 .main-pages a{
-    text-decoration: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-decoration: none;  
 }
 
 /* ====== cart ====== */
