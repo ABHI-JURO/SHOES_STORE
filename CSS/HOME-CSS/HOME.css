@@ -147,19 +147,19 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    gap: 10px;
+    max-width: 1540px;
 }
 
 .product{
     display: flex;
     flex-direction: column;
     height: auto;
+    width: auto;
 }
 
 .product-img{
     width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    background-color: red;
 }
 
 .product-img img{
@@ -168,7 +168,38 @@ body {
     object-fit: contain;
 }
 
+.product-info{
+    display: flex;
+    flex-direction: column;
+}
+
 .product-name{
     display: flex;
-    background-color: lightblue;
+    justify-content: flex-start;
+}
+
+.product-name p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.product-name p span{
+    font-family: Arial, Helvetica;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.product-price{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6px;
+}
+
+.product-price p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
 }
