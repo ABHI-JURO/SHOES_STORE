@@ -18,7 +18,7 @@ HOME PAGE CSS
     /* == VARIABLES: Global colors, fonts & sizes == */
     --primary-color: #000000;
     --secondary-color: #f8c211;
-    --background-color: #000000;
+    --background-color: gray;
     --text-color: #f8f8f8;
     --primary-font: 'bebas neue', sans-serif;
     --max-width: var(--max-width);   

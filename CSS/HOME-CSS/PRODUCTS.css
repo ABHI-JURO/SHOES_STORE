@@ -39,7 +39,7 @@
 .product-info{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: rgb(124, 124, 124);
 }
 
 .product-name{
