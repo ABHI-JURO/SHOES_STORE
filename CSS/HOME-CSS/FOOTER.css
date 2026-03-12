@@ -1,21 +1,20 @@
-.footer{
+.footer {
     display: flex;
     width: auto;
     max-width: var(--max-width);
     height: auto;
-    margin-top: 10px;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(156, 156, 156);
     flex-direction: row;
 }
 
-.footer-logo{
+.footer-logo {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -23,21 +22,22 @@
     align-items: center;
 }
 
-.footer-logo a{
+.footer-logo a {
     font-family: var(--primary-font);
     font-size: 3rem;
     color: var(--primary-color);
     text-transform: uppercase;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
-.footer-logo a span{
+.footer-logo a span {
     color: var(--secondary-color);
 }
 
 
-.products-footer ,.customer-support-footer{
+.products-footer,
+.customer-support-footer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -45,7 +45,8 @@
     align-items: center;
 }
 
-.products-footer p ,.customer-support-footer p{
+.products-footer p,
+.customer-support-footer p {
     font-family: var(--primary-font);
     font-size: 2rem;
     color: var(--primary-color);
@@ -54,13 +55,14 @@
 }
 
 
-.products-footer a ,.customer-support-footer a{
+.products-footer a,
+.customer-support-footer a {
     font-family: var(--primary-font);
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 1.1px;
-    text-decoration: none; 
+    text-decoration: none;
     color: var(--text-color);
     padding: 5px 0;
 }

@@ -1,0 +1,58 @@
+.newsletter-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(156, 156, 156);
+}
+
+.newsletter-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.newsletter-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.enter-email-box{
+    display: flex;
+    height: auto;
+}
+
+
+.enter-email-box input{
+   width: 18rem;
+   height: 2.5rem;
+}
+
+.subscribe-button{
+    width: auto;
+    height: auto;
+}
+
+.subscribe-button button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}

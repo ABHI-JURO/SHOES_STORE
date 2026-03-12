@@ -1,5 +1,6 @@
 @import url(./PRODUCTS.css);
 @import url(./FOOTER.css);
+@import url(./NEWSLETTER.css);
 
 /*
 ===========================
@@ -22,13 +23,6 @@ HOME PAGE CSS
     --text-color: #f8f8f8;
     --primary-font: 'bebas neue', sans-serif;
     --max-width: var(--max-width);   
-}
-
-/* ====== body styles ====== */
-
-body {
-    /* == BASE STYLES: Set background == */
-    background-color: var(--background-color);
 }
 
 /* ====== wrap -- container ====== */
