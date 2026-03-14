@@ -1,0 +1,15 @@
+@import url('../GLOBAL-CSS/GLOBAL.css');
+
+/*
+===========================
+SPORTS CSS
+===========================
+*/
+
+.active:active {
+    color: rgb(253, 165, 0);
+}
+
+.hero-header {
+    background-color: black;
+}
