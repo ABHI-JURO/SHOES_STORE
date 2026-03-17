@@ -2,3 +2,25 @@
 @import url('../GLOBAL-CSS/FOOTER.css');
 @import url('../GLOBAL-CSS/NEWSLETTER.css');
 @import url('../GLOBAL-CSS/PRODUCTS.css');
+
+/*
+===========================
+== GLOBAL CSS
+===========================
+*/
+
+* {
+    /* == RESET: Remove default browser styles == */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* == VARIABLES: Global colors, fonts & sizes == */
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --tertiary-color: #f8c211;
+    --primary-font: 'bebas neue', sans-serif;
+    --max-width: 1540px;
+}

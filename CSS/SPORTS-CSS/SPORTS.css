@@ -6,8 +6,8 @@ SPORTS CSS
 ===========================
 */
 
-.active:active {
-    color: rgb(253, 165, 0);
+.main-pages a.active {
+    color: var(--tertiary-color);
 }
 
 .hero-header {
