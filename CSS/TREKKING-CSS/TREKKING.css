@@ -6,10 +6,24 @@ TREKKING CSS
 ===========================
 */
 
+.hero-header {
+    height: auto;
+}
+
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
 .main-pages a.active {
     color: var(--tertiary-color);
 }
 
-.hero-header {
-    background-color: black;
+.hero-text h1 {
+    margin-top: 2.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.product-list {
+    margin-top: 1rem;
 }
