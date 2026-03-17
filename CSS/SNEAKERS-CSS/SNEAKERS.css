@@ -1,0 +1,15 @@
+@import url('../GLOBAL-CSS/GLOBAL.css');
+
+/*
+===========================
+SNEAKERS CSS
+===========================
+*/
+
+.main-pages a.active {
+    color: var(--tertiary-color);
+}
+
+.hero-header {
+    background-color: black;
+}
