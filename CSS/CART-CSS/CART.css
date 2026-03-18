@@ -1,0 +1,37 @@
+@import url("../GLOBAL-CSS/GLOBAL.css");
+
+/*
+===========================
+CART CSS
+===========================
+*/
+
+.hero-header {
+    height: auto;
+}
+
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.hero-text h1 {
+    margin-top: 2.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    letter-spacing: 5px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-container {
+    width: 70%;
+    background-color: rgb(0, 255, 242);
+}
+
+.billing-container {
+    width: 30%;
+    background-color: yellow;
+}

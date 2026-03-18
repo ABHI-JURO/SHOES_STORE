@@ -24,3 +24,13 @@
     --primary-font: 'bebas neue', sans-serif;
     --max-width: 1540px;
 }
+
+.wrap {
+    /* == LAYOUT: Center content, set max width == */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    flex-direction: column;
+}

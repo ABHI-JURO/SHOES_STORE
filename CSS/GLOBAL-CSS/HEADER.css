@@ -1,15 +1,3 @@
-/* ====== wrap -- container ====== */
-
-.wrap {
-    /* == LAYOUT: Center content, set max width == */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    flex-direction: column;
-}
-
 /* ====== hero-header ====== */
 
 .hero-header {
