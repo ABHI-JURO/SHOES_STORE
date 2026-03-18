@@ -98,6 +98,25 @@ PRODUCTS CSS (HOME)
     text-transform: capitalize;
 }
 
+.product-tag {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.product-tag p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+}
+
 .product-price {
     display: flex;
     justify-content: flex-start;
