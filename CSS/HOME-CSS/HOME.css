@@ -33,3 +33,28 @@ HOME PAGE CSS
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 20px rgba(248, 194, 17, 0.6);
 }
+
+.explore-new-collection {
+    display: flex;
+    align-items: center;
+}
+
+.explore-new-collection button {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.explore-new-collection button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+}
