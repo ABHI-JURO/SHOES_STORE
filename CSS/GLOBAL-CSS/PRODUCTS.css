@@ -70,7 +70,7 @@ PRODUCTS CSS (HOME)
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
 }
 
 .product-name {
@@ -108,7 +108,7 @@ PRODUCTS CSS (HOME)
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
