@@ -21,6 +21,7 @@ CART CSS
     margin-bottom: 1rem;
     color: var(--primary-color);
     letter-spacing: 5px;
+
 }
 
 .cart-container {
@@ -29,4 +30,5 @@ CART CSS
     align-items: flex-start;
     height: auto;
     width: 100%;
+    margin-top: 2rem;
 }

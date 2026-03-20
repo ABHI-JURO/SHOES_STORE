@@ -20,7 +20,7 @@ BILLING CSS
     border-top: 3px solid;
     border-bottom: 3px solid;
     border-radius: 8px;
-    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.048);
     transition: all 0.3s ease;
     margin-left: 0.8rem;
 }
