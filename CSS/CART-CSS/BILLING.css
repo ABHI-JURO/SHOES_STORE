@@ -1,0 +1,103 @@
+/*
+===========================
+BILLING CSS
+=========================== 
+*/
+
+
+.billing-container {
+    width: 30%;
+    height: auto;
+    display: flex;
+}
+
+.billing-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 8px;
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-left: 0.8rem;
+}
+
+.billing-box:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.billing-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.billing-item-cost,
+.shipping-charges,
+.sub-total,
+.total-after-tax {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.billing-item-cost p.money,
+.shipping-charges p.money,
+.sub-total p.money,
+.total-after-tax p.money {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+    letter-spacing: 0.2px;
+}
+
+s .purchase-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.purchase-btn button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid var(--primary-color) 2px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 0.8rem 8rem;
+    margin: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.395);
+}
+
+.purchase-btn button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid var(--primary-color) 2px;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.8);
+}
