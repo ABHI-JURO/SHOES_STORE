@@ -67,16 +67,18 @@ ITEM CSS
 }
 
 .item-name {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    font-family: var(--primary-font);
     color: var(--primary-color);
-    letter-spacing: 1px;
-    line-height: 1.1;
+    letter-spacing: 1.5px;
 }
 
 .item-name span {
-    font-weight: 900;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
 }
 
 .remove-btn {
@@ -107,15 +109,6 @@ ITEM CSS
 
 .remove-btn:hover .trash-icon {
     background-color: #e74c3c;
-}
-
-.item-tag {
-    font-size: 1rem;
-    font-weight: 900;
-    color: var(--tertiary-color);
-    margin-top: 5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 .item-price {
