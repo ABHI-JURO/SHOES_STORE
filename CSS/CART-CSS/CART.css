@@ -38,74 +38,162 @@ CART CSS
     flex-direction: row;
     height: auto;
     margin-left: 3rem;
-    border-top: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding: 1rem 0;
     margin-right: 2rem;
+    margin-bottom: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
 }
 
-.item-details {
-    width: 60%;
-    height: auto;
-
-}
-
-.item-name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--primary-color);
-    margin-top: 2rem;
-    padding-left: 1rem;
-}
-
-.item-name span {
-    font-weight: 900;
-}
-
-.item-price {
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-top: 2px;
-    color: var(--primary-color);
-    padding-left: 1rem;
-}
-
-.item-size {
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: var(--primary-color);
-    margin-top: 1rem;
-    padding-left: 1rem;
-}
-
-.item-tag {
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: var(--primary-color);
-    margin-top: 1px;
-    padding-left: 1rem;
-}
-
-.item-quantiy {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-top: 1.8rem;
-    padding-left: 1rem;
+.item-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .item-img {
     display: flex;
-    width: 30%;
-    height: 250px;
-    margin-left: 4rem;
+    width: 28%;
+    height: 180px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+    border-radius: 8px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: right;
+    transition: transform 0.4s ease;
+}
+
+.item-box:hover .item-img img {
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.item-details {
+    width: 72%;
+    height: auto;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.item-name span {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #a0a0a0;
+    mask-image: url('../../ICONS/feather/trash-2.svg');
+    mask-size: cover;
+    -webkit-mask-image: url('../../ICONS/feather/trash-2.svg');
+    -webkit-mask-size: cover;
+    transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+    transform: scale(1.1);
+}
+
+.remove-btn:hover .trash-icon {
+    background-color: #e74c3c;
+}
+
+.item-tag {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--tertiary-color);
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.item-price {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.item-size {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.item-quantity span {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    width: 40px;
+    text-align: center;
 }
 
 .billing-container {
