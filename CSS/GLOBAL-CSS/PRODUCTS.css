@@ -145,3 +145,36 @@ PRODUCTS CSS (HOME)
     font-weight: 700;
     color: var(--primary-color);
 }
+
+/* == add to cart button == */
+.add-to-cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.add-to-cart-btn button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid var(--primary-color) 2px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 0.6rem 0rem;
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid var(--primary-color) 2px;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+}
