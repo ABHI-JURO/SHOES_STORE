@@ -47,6 +47,7 @@ EXPLORE SECTION CSS (HOME)
     background-repeat: no-repeat;
     border-radius: 2rem;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .explore-sports:hover,
