@@ -147,7 +147,7 @@ PRODUCTS CSS (HOME)
 }
 
 /* == add to cart button == */
-.add-to-cart-btn {
+.add-to-cart-btn-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@ PRODUCTS CSS (HOME)
     margin-top: 1rem;
 }
 
-.add-to-cart-btn button {
+.add-to-cart-btn-div button {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border: solid var(--primary-color) 2px;
@@ -171,7 +171,7 @@ PRODUCTS CSS (HOME)
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-to-cart-btn button:hover {
+.add-to-cart-btn-div button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: solid var(--primary-color) 2px;
