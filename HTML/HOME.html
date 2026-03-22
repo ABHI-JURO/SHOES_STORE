@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 
     <link rel="stylesheet" href="../CSS/HOME-CSS/HOME.css">
-    <script src="../JS/HOME-JS/HOME.js"></script>
+    <script defer src="../JS/HOME-JS/HOME.js"></script>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                     <p>Discover the perfect blend of style, comfort, and performance with AIKICKS. Engineered for the
                         modern explorer, our shoes are designed to keep you moving forward.</p>
                     <!-- == explore button on hero-content == -->
-                    <button class="explore-button">Explore Collection</button>
+                    <button class="explore-button" id="explore-btn">Explore</button>
                 </div>
             </div>
         </header>
@@ -53,18 +53,18 @@
 
         <!-- == explore section == -->
 
-        <div class="explore-section">
+        <div class="explore-section" id="explore-btn-click">
             <div class="explore-heading">
                 <p>explore</p>
             </div>
             <div class="explore-products">
-                <div class="explore-sports">
+                <div class="explore-sports" id="explore-sec-select-sports">
                     <p>sports</p>
                 </div>
-                <div class="explore-sneakers">
+                <div class="explore-sneakers" id="explore-sec-select-sneakers">
                     <p>sneakers</p>
                 </div>
-                <div class="explore-trekking">
+                <div class="explore-trekking" id="explore-sec-select-trekking">
                     <p>trekking</p>
                 </div>
             </div>
