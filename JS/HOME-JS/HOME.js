@@ -29,7 +29,7 @@ explore_sec_select_trekking.addEventListener('click', () => {
 });
 
 
-//for the product section
+//for the product section in the home page
 
 const product_list_container = document.getElementById('dynamic-product-list');
 const more_button_explore_div = document.querySelector('.more-button-explore-div');

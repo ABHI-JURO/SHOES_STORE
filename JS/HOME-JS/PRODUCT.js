@@ -1,5 +1,6 @@
 export const products = [
     {
+        product_id: "homep1",
         product_img: "../IMAGES/HOME_PRODUCTS/product-1.webp",
         product_default_img_name: "product1",
         product_brand: "INFINO",
@@ -9,6 +10,7 @@ export const products = [
         product_isnew: true
     },
     {
+        product_id: "homep2",
         product_img: "../IMAGES/HOME_PRODUCTS/product-2.webp",
         product_default_img_name: "product2",
         product_brand: "FLYING FURY",
@@ -18,6 +20,7 @@ export const products = [
         product_isnew: true
     },
     {
+        product_id: "homep3",
         product_img: "../IMAGES/HOME_PRODUCTS/product-3.webp",
         product_default_img_name: "product3",
         product_brand: "EAGLE",
@@ -27,6 +30,7 @@ export const products = [
         product_isnew: true
     },
     {
+        product_id: "homep4",
         product_img: "../IMAGES/HOME_PRODUCTS/product-4.webp",
         product_default_img_name: "product4",
         product_brand: "EAGLE",
