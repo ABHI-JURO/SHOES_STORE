@@ -1,10 +1,10 @@
-import { sports_products } from "./SPORTS-P.js";
+import { trekking_products } from "./TREKKING-P.js";
 
-const sports_product_list_container = document.getElementById("dynamic-sports-products-list");
+const trekking_products_list_container = document.getElementById("dynamic-trekking-products-list");
 
-sports_products.forEach(product => {
+trekking_products.forEach(product => {
 
-    const sports_product_HTML = `
+    const trekking_products_HTML = `
             <div class="product">
                 <div class="product-img">
                     ${product.product_isnew ? `<span class="new-tag">new</span>` : ''}
@@ -35,5 +35,5 @@ sports_products.forEach(product => {
             </div>
     `;
 
-    sports_product_list_container.innerHTML += sports_product_HTML;
+    trekking_products_list_container.innerHTML += trekking_products_HTML;
 })
