@@ -1,10 +1,10 @@
-import { sports_products } from "./SPORTS-P.js";
+import { new_collection_products } from "./NEW_COLLECTION-P.js";
 
-const sports_product_list_container = document.getElementById("dynamic-sports-products-list");
+const new_collection_list_container = document.getElementById("dynamic-new-collection-products-list");
 
-sports_products.forEach(product => {
+new_collection_products.forEach(product => {
 
-    const sports_product_HTML = `
+    const new_collection_HTML = `
             <div class="product">
                 <div class="product-img">
                     ${product.product_isnew ? `<span class="new-tag">new</span>` : ''}
@@ -33,5 +33,5 @@ sports_products.forEach(product => {
             </div>
     `;
 
-    sports_product_list_container.innerHTML += sports_product_HTML;
+    new_collection_list_container.innerHTML += new_collection_HTML;
 })

@@ -26,9 +26,7 @@ sneaker_products.forEach(product => {
                     </div>
 
                     <div class="add-to-cart-btn-div">
-                        <button class="add-to-cart-btn">
-                            Add to Cart
-                        </button>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
