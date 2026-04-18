@@ -1,3 +1,24 @@
+const nav_bar = document.getElementById("dynamic-nav-bar");
+
+nav_bar.innerHTML = `
+    <!-- == logo on nav-bar == -->
+    <div class="logo">
+        <a href="HOME.html" title="home">ai<span>kicks</span></a>
+    </div>
+    <!-- == main pages section on nav-bar == -->
+    <div class="main-pages">
+        <a href="SPORTS.html">sports</a>
+        <a href="TREKKING.html">trekking</a>
+        <a href="SNEAKERS.html">sneakers</a>
+        <a href="NEW_COLLECTION.html">new collection</a>
+        <a href="HOME.html#about-us">about us</a>
+    </div>
+    <!-- == cart on nav-bar == -->
+    <div class="cart">
+        <a href="CART.html">cart</a>
+    </div>
+`
+
 const news_letter_section = document.getElementById("dynamic-newsletter-section");
 
 news_letter_section.innerHTML = `
