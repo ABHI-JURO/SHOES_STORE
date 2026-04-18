@@ -42,20 +42,20 @@ footer_section.innerHTML = `
             <div class="footer-logo">
                 <a href="HOME.html">ai<span>kicks</span></a>
                 <div class="social-links">
-                    <a href="#">IG</a>
-                    <a href="#">FB</a>
-                    <a href="#">X</a>
-                    <a href="#">YT</a>
-                    <a hred="#">GH</a>
+                    <a href="">IG</a>
+                    <a href="">FB</a>
+                    <a href="">X</a>
+                    <a href="">YT</a>
+                    <a href="https://github.com/ABHI-JURO">GH</a>
                 </div>
             </div>
 
             <div class="products-footer">
                 <p>Products</p>
-                <a href="">sports</a>
-                <a href="">trekking</a>
-                <a href="">sneakers</a>
-                <a href="">new collection</a>
+                <a href="./SPORTS.html">sports</a>
+                <a href="./TREKKING.html">trekking</a>
+                <a href="./SNEAKERS.html">sneakers</a>
+                <a href="./NEW_COLLECTION.html">new collection</a>
             </div>
 
             <div class="customer-support-footer">
