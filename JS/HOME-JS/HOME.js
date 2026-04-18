@@ -1,5 +1,5 @@
 
-import { products } from "../HOME-JS/PRODUCT.js";
+import { products } from "../HOME-JS/HOME-P.js";
 
 // js for the explore button in the hero header
 const expolre_btn = document.querySelector("#explore-btn");
