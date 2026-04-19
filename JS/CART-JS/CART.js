@@ -2,9 +2,13 @@ import { cart_products } from "./CART-P.js";
 
 localStorage.setItem("cart", JSON.stringify(cart_products))
 
+const json_cart = localStorage.getItem("cart")
+
+const main_cart = JSON.parse(json_cart)
+
 const cart_item = document.getElementById("dynamic-item-container");
 
-cart_products.forEach(product => {
+main_cart.forEach(product => {
     const item_box = `
         <div class="item-box">
             <div class="item-img">
