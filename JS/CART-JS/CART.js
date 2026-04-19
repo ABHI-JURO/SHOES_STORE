@@ -44,3 +44,52 @@ main_cart.forEach(product => {
     `
     cart_item.innerHTML += item_box;
 });
+
+const billing_container = document.getElementById("dynamic-billing-container");
+
+let sub_total = 0;
+let total = 0;
+const tax = 0.05;
+const shipping_charges = 200;
+
+main_cart.forEach(product => {
+    if (product.product_price > 0) {
+        sub_total += product.product_price;
+    }
+});
+
+if (sub_total > 0) {
+    total = sub_total + shipping_charges;
+}
+
+const total_after_tax = total + (total * tax);
+
+
+const billing_box = `
+    <div class="billing-box">
+        <div class="billing-header">
+            <h3>Order Summary</h3>
+        </div>
+        <div class="billing-item-cost">
+            <p>sub-total :</p>
+            <p class="money">Rs. ${sub_total}</p>
+        </div>
+        <div class="shipping-charges">
+            <p> Shipping Charges : </p>
+            <p class="money"> Rs. ${shipping_charges} </p>
+        </div>
+        <div class="sub-total">
+            <p> Total : </p>
+            <p class="money">Rs. ${total} </p>
+        </div>
+        <div class="total-after-tax">
+            <p> Total (incl. taxes) : </p>
+            <p class="money">Rs. ${Math.round(total_after_tax)} </p>
+        </div>
+
+        <div class="purchase-btn">
+            <button>purchase</button>
+        </div>
+    </div>
+`
+billing_container.innerHTML += billing_box;

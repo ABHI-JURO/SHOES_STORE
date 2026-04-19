@@ -6,7 +6,7 @@ export const cart_products = [
         product_brand: "INFINO",
         product_name: "Black Sports Shoes",
         product_tag: "running",
-        product_price: "3,499.00",
+        product_price: 3499,
         product_isnew: true
     },
     {
@@ -16,7 +16,7 @@ export const cart_products = [
         product_brand: "EAGLE",
         product_name: "White Sneakers",
         product_tag: "high-top",
-        product_price: "1,699.00",
+        product_price: 1699,
         product_isnew: true
     }
 ]
