@@ -7,6 +7,7 @@ export const cart_products = [
         product_name: "Black Sports Shoes",
         product_tag: "running",
         product_price: 3499,
+        product_quantity: 2,
         product_isnew: true
     },
     {
@@ -17,6 +18,7 @@ export const cart_products = [
         product_name: "White Sneakers",
         product_tag: "high-top",
         product_price: 1699,
+        product_quantity: 1,
         product_isnew: true
     }
 ]

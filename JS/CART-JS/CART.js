@@ -38,7 +38,7 @@ main_cart.forEach(product => {
                     </div>
                     <div class="item-quantity">
                         <button class="qty-btn">-</button>
-                        <span>1</span>
+                        <span>${product.product_quantity}</span>
                         <button class="qty-btn">+</button>
                     </div>
                 </div>
@@ -54,6 +54,7 @@ document.querySelectorAll(".remove-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         main_cart.splice(main_cart.findIndex(product => product.product_id === btn.id), 1);
         update_cart();
+        window.location.reload();
     })
 });
 
@@ -73,7 +74,7 @@ let shipping_charges = 200;
 
 main_cart.forEach(product => {
     if (product.product_price > 0) {
-        sub_total += product.product_price;
+        sub_total += product.product_price * product.product_quantity;
     }
 });
 
