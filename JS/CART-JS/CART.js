@@ -1,15 +1,18 @@
 import { cart_products } from "./CART-P.js";
 
-localStorage.setItem("cart", JSON.stringify(cart_products));
-let json_cart = localStorage.getItem("cart");
-let main_cart = JSON.parse(json_cart);
+if (!localStorage.getItem("cart") || localStorage.getItem("cart") === "[]") {
+    localStorage.setItem("cart", JSON.stringify(cart_products));
+}
+let main_cart = JSON.parse(localStorage.getItem("cart"));
+
+console.log(main_cart);
 
 /* item section ---start---  */
 
 let cart_item = document.getElementById("dynamic-item-container");
 
 main_cart.forEach(product => {
-    const item_box = `
+    let item_box = `
         <div class="item-box">
             <div class="item-img">
                 <img src="${product.product_img}" alt="product-1">
@@ -56,8 +59,7 @@ document.querySelectorAll(".remove-btn").forEach(btn => {
 
 function update_cart() {
     localStorage.setItem("cart", JSON.stringify(main_cart));
-    let json_cart = localStorage.getItem("cart");
-    main_cart = JSON.parse(json_cart);
+    main_cart = JSON.parse(localStorage.getItem("cart"));
 }
 
 /* billing section ---start---  */
@@ -67,7 +69,7 @@ const billing_container = document.getElementById("dynamic-billing-container");
 let sub_total = 0;
 let total = 0;
 const tax = 0.05;
-const shipping_charges = 200;
+let shipping_charges = 200;
 
 main_cart.forEach(product => {
     if (product.product_price > 0) {
@@ -77,6 +79,8 @@ main_cart.forEach(product => {
 
 if (sub_total > 0) {
     total = sub_total + shipping_charges;
+} else {
+    shipping_charges = 0;
 }
 
 const total_after_tax = total + (total * tax);
