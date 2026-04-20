@@ -1,12 +1,12 @@
 import { cart_products } from "./CART-P.js";
 
-localStorage.setItem("cart", JSON.stringify(cart_products))
+localStorage.setItem("cart", JSON.stringify(cart_products));
+let json_cart = localStorage.getItem("cart");
+let main_cart = JSON.parse(json_cart);
 
-const json_cart = localStorage.getItem("cart")
+/* item section ---start---  */
 
-const main_cart = JSON.parse(json_cart)
-
-const cart_item = document.getElementById("dynamic-item-container");
+let cart_item = document.getElementById("dynamic-item-container");
 
 main_cart.forEach(product => {
     const item_box = `
@@ -19,7 +19,7 @@ main_cart.forEach(product => {
                     <div class="item-name">
                         <h3>${product.product_brand} <span>${product.product_name}</span></h3>
                     </div>
-                    <button class="remove-btn" title="Remove Item">
+                    <button class="remove-btn" title="Remove Item" id="${product.product_id}">
                         <div class="trash-icon"></div>
                     </button>
                 </div>
@@ -44,6 +44,23 @@ main_cart.forEach(product => {
     `
     cart_item.innerHTML += item_box;
 });
+
+/* item section ---end---  */
+
+document.querySelectorAll(".remove-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        main_cart.splice(main_cart.findIndex(product => product.product_id === btn.id), 1);
+        update_cart();
+    })
+});
+
+function update_cart() {
+    localStorage.setItem("cart", JSON.stringify(main_cart));
+    let json_cart = localStorage.getItem("cart");
+    main_cart = JSON.parse(json_cart);
+}
+
+/* billing section ---start---  */
 
 const billing_container = document.getElementById("dynamic-billing-container");
 
@@ -93,3 +110,5 @@ const billing_box = `
     </div>
 `
 billing_container.innerHTML += billing_box;
+
+/* billing section ---end---  */
