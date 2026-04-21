@@ -37,9 +37,9 @@ main_cart.forEach(product => {
                         <p>Size | 8</p>
                     </div>
                     <div class="item-quantity">
-                        <button class="qty-btn">-</button>
+                        <button class="qty-btn minus-btn" data-id="${product.product_id}">-</button>
                         <span>${product.product_quantity}</span>
-                        <button class="qty-btn">+</button>
+                        <button class="qty-btn plus-btn" data-id="${product.product_id}">+</button>
                     </div>
                 </div>
             </div>
@@ -62,6 +62,34 @@ function update_cart() {
     localStorage.setItem("cart", JSON.stringify(main_cart));
     main_cart = JSON.parse(localStorage.getItem("cart"));
 }
+
+document.querySelectorAll(".plus-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let id = btn.getAttribute("data-id");
+        main_cart.forEach(product => {
+            if (product.product_id === id) {
+                product.product_quantity += 1;
+            }
+        })
+        update_cart();
+        window.location.reload();
+    })
+});
+
+document.querySelectorAll(".minus-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let id = btn.getAttribute("data-id");
+        main_cart.forEach(product => {
+            if (product.product_id === id) {
+                if (product.product_quantity > 1) {
+                    product.product_quantity -= 1;
+                }
+            }
+        })
+        update_cart();
+        window.location.reload();
+    })
+});
 
 /* billing section ---start---  */
 
