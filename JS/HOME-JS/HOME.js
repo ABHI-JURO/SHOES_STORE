@@ -1,4 +1,3 @@
-
 import { products } from "../HOME-JS/HOME-P.js";
 
 // js for the explore button in the hero header
@@ -58,7 +57,7 @@ products.forEach(product => {
                     </div>
 
                     <div class="add-to-cart-btn-div">
-                        <button>Add to Cart</button>
+                        <button class="add-to-cart-btn" data-id="${product.product_id}">Add to Cart</button>
                     </div>
 
                 </div>
@@ -68,3 +67,11 @@ products.forEach(product => {
     more_button_explore_div.insertAdjacentHTML('beforebegin', home_product_html);
     //product_list_container.innerHTML += home_product_html;
 })
+
+//js for the add to cart button
+
+document.querySelectorAll(".add-to-cart-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let id = btn.getAttribute("data-id");
+    })
+});

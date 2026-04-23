@@ -6,7 +6,8 @@ export const products = [
         product_brand: "INFINO",
         product_name: "Black Sports Shoes",
         product_tag: "running",
-        product_price: "3,499.00",
+        product_price: 3499,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -16,7 +17,8 @@ export const products = [
         product_brand: "FLYING FURY",
         product_name: "Black Sports Shoes",
         product_tag: "casual",
-        product_price: "1,999.00",
+        product_price: 1999,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -26,7 +28,8 @@ export const products = [
         product_brand: "EAGLE",
         product_name: "White Sneakers",
         product_tag: "high-top",
-        product_price: "1,699.00",
+        product_price: 1699,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -36,7 +39,8 @@ export const products = [
         product_brand: "EAGLE",
         product_name: "White Sneakers",
         product_tag: "high-top",
-        product_price: "1,699.00",
+        product_price: 1699,
+        product_quantity: 1,
         product_isnew: true
     }
 ];

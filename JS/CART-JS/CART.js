@@ -3,7 +3,7 @@ import { cart_products } from "./CART-P.js";
 if (!localStorage.getItem("cart") || localStorage.getItem("cart") === "[]") {
     localStorage.setItem("cart", JSON.stringify(cart_products));
 }
-let main_cart = JSON.parse(localStorage.getItem("cart"));
+export let main_cart = JSON.parse(localStorage.getItem("cart"));
 
 console.log(main_cart);
 
@@ -58,7 +58,7 @@ document.querySelectorAll(".remove-btn").forEach(btn => {
     })
 });
 
-function update_cart() {
+export function update_cart() {
     localStorage.setItem("cart", JSON.stringify(main_cart));
     main_cart = JSON.parse(localStorage.getItem("cart"));
 }
