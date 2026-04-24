@@ -6,7 +6,8 @@ export const sneaker_products = [
         product_brand: "STOMP",
         product_name: "Off White Sneakers",
         product_tag: "low-top",
-        product_price: "1,949.00",
+        product_price: 1949,
+        product_quantity: 1,
         product_isnew: false
     },
     {
@@ -16,7 +17,8 @@ export const sneaker_products = [
         product_brand: "STATIC",
         product_name: "Black Sneakers",
         product_tag: "low-top",
-        product_price: "1,849.00",
+        product_price: 1849,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -26,7 +28,8 @@ export const sneaker_products = [
         product_brand: "EAGLE",
         product_name: "White Sneakers",
         product_tag: "high-top",
-        product_price: "1,699.00",
+        product_price: 1699,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -36,7 +39,8 @@ export const sneaker_products = [
         product_brand: "EAGLE",
         product_name: "Beige Sneakers",
         product_tag: "high-top",
-        product_price: "1,699.00",
+        product_price: 1699,
+        product_quantity: 1,
         product_isnew: false
     }
 ];

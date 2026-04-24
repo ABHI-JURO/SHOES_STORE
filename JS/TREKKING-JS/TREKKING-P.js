@@ -6,7 +6,8 @@ export const trekking_products = [
         product_brand: "CAMPER",
         product_name: "Brown Trekking Shoes",
         product_tag: "hiking",
-        product_price: "4,499.00",
+        product_price: 4499,
+        product_quantity: 1,
         product_isnew: false
     },
     {
@@ -16,7 +17,8 @@ export const trekking_products = [
         product_brand: "CAMPER",
         product_name: "Black Trekking Shoes",
         product_tag: "hiking",
-        product_price: "4,499.00",
+        product_price: 4499,
+        product_quantity: 1,
         product_isnew: true
     },
     {
@@ -26,7 +28,8 @@ export const trekking_products = [
         product_brand: "HIKER",
         product_name: "Olive Trekking Shoes",
         product_tag: "hiking",
-        product_price: "3,599.00",
+        product_price: 3599,
+        product_quantity: 1,
         product_isnew: false
     },
     {
@@ -36,7 +39,8 @@ export const trekking_products = [
         product_brand: "HIKER",
         product_name: "Grey Trekking Shoes",
         product_tag: "hiking",
-        product_price: "2,499.00",
+        product_price: 2499,
+        product_quantity: 1,
         product_isnew: true
     }
 ];
