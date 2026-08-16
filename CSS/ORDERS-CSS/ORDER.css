@@ -1,0 +1,73 @@
+@import url("../GLOBAL-CSS/GLOBAL.css");
+
+/*
+===========================
+ORDERS CSS
+===========================
+*/
+
+.hero-header {
+    height: auto;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.orders-list {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 20px 40px 0px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.order-img {
+    display: flex;
+    height: 300px;
+    padding: 5px;
+    width: 28%;
+    justify-content: center;
+}
+
+.order-img img {
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.order-discription {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+}
+
+.product-title {
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    margin: 20px 0 2px;
+}
+
+.product-title span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.product-size p {
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    margin: 0 0 2px;
+}
+
+.product-type p {
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+}
+
+.product-quantity p {
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+}
