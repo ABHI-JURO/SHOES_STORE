@@ -17,6 +17,9 @@ if (nav_bar) {
         <!-- == cart on nav-bar == -->
         <div class="cart">
             <a href="CART.html">cart</a>
+            <a href="ORDERS.html">orders</a>
+        </div>
+            
         </div>
     `
 }
