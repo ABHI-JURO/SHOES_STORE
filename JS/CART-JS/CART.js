@@ -5,8 +5,6 @@ if (!localStorage.getItem("cart") || localStorage.getItem("cart") === "[]") {
 }
 export let main_cart = JSON.parse(localStorage.getItem("cart"));
 
-console.log(main_cart);
-
 /* item section ---start---  */
 
 let cart_item = document.getElementById("dynamic-item-container");
@@ -138,10 +136,31 @@ const billing_box = `
         </div>
 
         <div class="purchase-btn">
-            <button>purchase</button>
+            <button class="purchase-bttn">purchase</button>
         </div>
     </div>
 `
 billing_container.innerHTML += billing_box;
 
 /* billing section ---end---  */
+
+/* purchase section */
+
+document.querySelector(".purchase-bttn").addEventListener("click", () => {
+
+    if (!main_cart || main_cart.length === 0) {
+        alert("your cart is empty");
+        return;
+    }
+
+    let existingOrders = JSON.parse(localStorage.getItem("orders")) || [];
+
+    main_cart.forEach(product => {
+        existingOrders.push(product);
+    })
+
+    localStorage.setItem("orders", JSON.stringify(existingOrders));
+    localStorage.setItem("cart", JSON.stringify([]));
+    window.location.href = "../HTML/ORDERS.html";
+});
+
