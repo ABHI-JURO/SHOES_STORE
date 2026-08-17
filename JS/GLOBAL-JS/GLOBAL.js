@@ -19,9 +19,18 @@ if (nav_bar) {
             <a href="CART.html">cart</a>
             <a href="ORDERS.html">orders</a>
         </div>
-            
-        </div>
-    `
+    `;
+
+    // Highlight active page link in header
+    const currentPage = window.location.pathname.split("/").pop() || "HOME.html";
+    const navLinks = nav_bar.querySelectorAll("a");
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
+    });
 }
 
 const news_letter_section = document.getElementById("dynamic-newsletter-section");

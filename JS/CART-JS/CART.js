@@ -1,5 +1,3 @@
-import { cart_products } from "./CART-P.js";
-
 if (!localStorage.getItem("cart") || localStorage.getItem("cart") === "[]") {
     localStorage.setItem("cart", JSON.stringify(cart_products));
 }

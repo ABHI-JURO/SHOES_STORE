@@ -73,7 +73,8 @@
     transition: color 0.3s ease;
 }
 
-.main-pages a:hover {
+.main-pages a:hover,
+.main-pages a.active {
     color: var(--tertiary-color);
 }
 
@@ -101,9 +102,11 @@
     margin-right: 6px;
 }
 
-.cart a:hover {
-    background-color: var(--secondary-color);
+.cart a:hover,
+.cart a.active {
+    background-color: var(--tertiary-color);
     color: var(--primary-color);
+    border-color: var(--tertiary-color);
 }
 
 /* ====== hero content ====== */

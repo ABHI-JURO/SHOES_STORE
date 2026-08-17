@@ -1,5 +1,3 @@
-import { orders } from "../orders-js/order-p.js"
-
 export let order_list = JSON.parse(localStorage.getItem("orders"));
 
 console.log(order_list);
@@ -28,11 +26,6 @@ order_list.forEach(product => {
                     <div class="product-quantity">
                         <p> qty | ${product.product_quantity} </p>
                     </div>
-
-                    <div class="track-order">
-                        <button>TRACK-ORDER</button>
-                    </div>
-
                     <div class="cancel-order">
                         <button class="cancel-btn" id="${product.product_id}">CANCEL-ORDER</button>
                     </div>
