@@ -2,147 +2,162 @@
 
 > *"Step into the Future of Footwear"*
 
-A fully handcrafted, multi-page e-commerce style website for **AIKICKS** — a fictional premium footwear brand. Built using pure **HTML**, **CSS**, and **JavaScript** with a focus on clean structure, dynamic content rendering, and a modular file organization.
+A handcrafted, multi-page e-commerce web application for **AIKICKS** — a fictional footwear brand. Built using **HTML5**, modular **CSS3**, and **Vanilla JavaScript (ES Modules)** with client-side state management via `localStorage`.
 
 ---
 
-## 🌐 Pages
+## 🌐 Pages Overview
 
-| Page | File | Description |
-|------|------|-------------|
-| Home | `HTML/HOME.html` | Hero section, product highlights, About Us, Newsletter & Footer |
-| Sneakers | `HTML/SNEAKERS.html` | Dedicated Sneakers category page |
-| Sports | `HTML/SPORTS.html` | Dedicated Sports category page |
-| Trekking | `HTML/TREKKING.html` | Dedicated Trekking category page |
-| New Collection | `HTML/NEW_COLLECTION.html` | Latest arrivals showcase |
-| Cart | `HTML/CART.html` | Shopping cart page |
+| Page | HTML Location | Key Functionality |
+|------|---------------|-------------------|
+| **Home** | `HTML/HOME.html` | Hero header, category explorer cards, featured collection, About Us section, newsletter, & footer |
+| **Sneakers** | `HTML/SNEAKERS.html` | Sneakers category product gallery |
+| **Sports** | `HTML/SPORTS.html` | Performance sports footwear collection |
+| **Trekking** | `HTML/TREKKING.html` | Rugged trekking & outdoor shoes collection |
+| **New Collection** | `HTML/NEW_COLLECTION.html` | Showcase of latest product releases |
+| **Cart** | `HTML/CART.html` | Dynamic item list, quantity adjusters, subtotal/tax/shipping calculator, & checkout trigger |
+| **Orders** | `HTML/ORDERS.html` | Orders dashboard displaying active placed orders with real-time order cancellation |
 
 ---
 
-## 📁 Project Structure
+## 📁 Exact File & Directory Structure
 
 ```
 WEBSITE/
 │
-├── HTML/                       # All page HTML files
-│   ├── HOME.html
-│   ├── SNEAKERS.html
-│   ├── SPORTS.html
-│   ├── TREKKING.html
-│   ├── NEW_COLLECTION.html
-│   └── CART.html
+├── HTML/                           # Page Markup Files
+│   ├── CART.html                   # Shopping cart & checkout interface
+│   ├── HOME.html                   # Main landing page
+│   ├── NEW_COLLECTION.html         # New collection page
+│   ├── ORDERS.html                 # Placed orders & status dashboard
+│   ├── SNEAKERS.html               # Sneakers product category page
+│   ├── SPORTS.html                 # Sports product category page
+│   └── TREKKING.html               # Trekking product category page
 │
-├── CSS/                        # Stylesheets organized per page
-│   ├── GLOBAL-CSS/             # Shared styles across all pages
-│   │   ├── GLOBAL.css          # Base reset & root variables
-│   │   ├── HEADER.css          # Frosted glass nav bar
-│   │   ├── FOOTER.css          # Footer layout & social links
-│   │   ├── NEWSLETTER.css      # Newsletter subscription section
-│   │   └── PRODUCTS.css        # Product card components
-│   ├── HOME-CSS/
-│   │   ├── HOME.css            # Hero section layout
-│   │   ├── EXPLORE.css         # Explore section (Sports/Sneakers/Trekking cards)
-│   │   └── ABOUT-US.css        # Specialities / About Us rows
-│   ├── SNEAKERS-CSS/
-│   ├── SPORTS-CSS/
-│   ├── TREKKING-CSS/
+├── CSS/                            # Stylesheets & CSS Modules
+│   ├── FOOTER.css                  # Global footer styles
+│   ├── GLOBAL.css                  # Core CSS reset, root variables, & component imports
+│   ├── HEADER.css                  # Frosted-glass navbar layout & active state highlights
+│   ├── NEWSLETTER.css              # Newsletter banner styles
+│   ├── PRODUCTS.css                # Standardized product card components
+│   │
+│   ├── CART-CSS/                   # Cart-specific modular stylesheets
+│   │   ├── BILLING.css             # Order summary & pricing layout
+│   │   ├── CART.css                # Base cart page stylesheet & imports
+│   │   └── ITEM.css                # Cart item card styling & quantity controls
+│   │
+│   ├── HOME-CSS/                   # Home page modular stylesheets
+│   │   ├── ABOUT-US.css            # Brand story & specialities grid
+│   │   ├── EXPLORE.css             # Interactive category cards layout
+│   │   └── HOME.css                # Hero section banner & header layout
+│   │
 │   ├── NEW_COLLECTION-CSS/
-│   └── CART-CSS/
+│   │   └── NEW_COLLECTION.css      # New collection layout
+│   │
+│   ├── ORDERS-CSS/
+│   │   └── ORDER.css               # Orders history list & cancel button styles
+│   │
+│   ├── SNEAKERS-CSS/
+│   │   └── SNEAKERS.css            # Sneakers gallery layout
+│   │
+│   ├── SPORTS-CSS/
+│   │   └── SPORTS.css              # Sports gallery layout
+│   │
+│   └── TREKKING-CSS/
+│       └── TREKKING.css            # Trekking gallery layout
 │
-├── JS/                         # JavaScript organized per page
+├── JS/                             # Vanilla JS Logic & ES Modules
+│   ├── CART-JS/
+│   │   └── CART.js                 # Cart state, item removal, quantity updates, subtotal math, & checkout flow
+│   │
 │   ├── GLOBAL-JS/
-│   │   └── GLOBAL.js           # Shared logic: nav bar, footer, newsletter
+│   │   └── GLOBAL.js               # Shared dynamic navigation bar, active link highlighter, newsletter, & footer injection
+│   │
 │   ├── HOME-JS/
-│   │   ├── HOME.js             # Home-specific logic
-│   │   └── HOME-P.js           # Home product rendering
-│   ├── SNEAKERS-JS/
-│   ├── SPORTS-JS/
-│   ├── TREKKING-JS/
+│   │   ├── HOME-P.js               # Home page product data source
+│   │   └── HOME.js                 # Home interaction handlers & category navigation routing
+│   │
 │   ├── NEW_COLLECTION-JS/
-│   └── CART-JS/
+│   │   ├── NEW_COLLECTION-P.js     # New collection product dataset
+│   │   └── NEW_COLLECTION.js       # New collection page DOM renderer
+│   │
+│   ├── SNEAKERS-JS/
+│   │   ├── SNEAKERS-P.js           # Sneakers product dataset
+│   │   └── SNEAKERS.js             # Sneakers page DOM renderer
+│   │
+│   ├── SPORTS-JS/
+│   │   ├── SPORTS-P.js             # Sports product dataset
+│   │   └── SPORTS.js               # Sports page DOM renderer
+│   │
+│   ├── TREKKING-JS/
+│   │   ├── TREKKING-P.js           # Trekking product dataset
+│   │   └── TREKKING.js             # Trekking page DOM renderer
+│   │
+│   └── orders-js/
+│       └── order.js                # LocalStorage orders list renderer & order cancellation handler
 │
-├── IMAGES/                     # All static image assets
-│   ├── HEADER/                 # Hero / banner images
-│   ├── ABOUT US/               # Specialities section images
-│   ├── EXPLORE/                # Explore section category images
-│   ├── HOME_PRODUCTS/          # Product images shown on Home
-│   ├── SNEAKERS_PRODUCTS/
-│   ├── SPORTS_PRODUCTS/
-│   ├── TREKKING_PRODUCTS/
-│   └── CART_PRODUCTS/
+├── IMAGES/                         # Static Image Resources
+│   ├── ABOUT US/                   # Brand feature images
+│   ├── CART_PRODUCTS/              # Cart preview thumbnails
+│   ├── EXPLORE/                    # Category section card cover photos
+│   ├── HEADER/                     # Hero section background banner images
+│   ├── HOME_PRODUCTS/              # Home product grid imagery
+│   ├── SNEAKERS_PRODUCTS/          # Sneakers collection imagery
+│   ├── SPORTS_PRODUCTS/            # Sports collection imagery
+│   └── TREKKING_PRODUCTS/          # Trekking collection imagery
 │
-└── ICONS/                      # SVG/PNG icons used across the site
+└── ICONS/                          # Icon Assets
+    └── feather/                    # Feather icon set
 ```
 
 ---
 
-## ✨ Features
+## ✨ System Features
 
-- **Dynamic Navigation Bar** — Injected via `GLOBAL.js` as a module so the same nav is reused across all pages without copy-pasting HTML.
-- **Dynamic Footer & Newsletter** — Same approach: rendered once in JS, applied everywhere.
-- **Dynamic Product Lists** — Products are rendered programmatically from JS data, keeping HTML lean.
-- **Explore Section** — Clickable category cards (Sports, Sneakers, Trekking) that route to their respective pages.
-- **About Us / Specialities** — Three alternating image-text rows highlighting the brand's core values.
-- **Cart Page** — Dedicated cart view for selected products.
-- **Modular CSS** — Each section has its own stylesheet; global styles are inherited site-wide.
-- **ES Modules** (`type="module"`) — Used throughout JS files to keep scope clean and allow imports/exports.
+- 🧭 **Centralized Navigation Module** (`JS/GLOBAL-JS/GLOBAL.js`) — Dynamically renders the global header, active nav link state, newsletter subscription box, and footer across all 7 HTML pages.
+- 🛒 **Shopping Cart Engine** (`JS/CART-JS/CART.js`) — Renders cart items dynamically with item increment/decrement, item removal, 5% tax calculation, flat shipping fees, and checkout order placement.
+- 📦 **Orders Management Dashboard** (`JS/orders-js/order.js`) — Persists purchases into `localStorage` under `orders` key and allows users to view active order details and cancel orders.
+- 🎨 **Modular Stylesheet Architecture** (`CSS/`) — `GLOBAL.css` imports root structural styles (`HEADER.css`, `FOOTER.css`, `NEWSLETTER.css`, `PRODUCTS.css`), while individual pages utilize dedicated CSS subfolders (such as `CART-CSS/BILLING.css`, `CART-CSS/ITEM.css`, and `HOME-CSS/EXPLORE.css`).
+- ⚡ **Product Data Separation** — Products are maintained as JavaScript objects (`*-P.js` files) separated cleanly from DOM rendering logic (`*.js` files).
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| **HTML5** | Semantic page structure |
-| **CSS3** | Layouts, animations, glassmorphism nav |
-| **Vanilla JavaScript** | Dynamic rendering, routing, DOM manipulation |
-| **Google Fonts** | `Bebas Neue` for brand typography |
-| **ES Modules** | Clean JS module system (`import`/`export`) |
+| Technology | Implementation |
+|------------|----------------|
+| **HTML5** | Multi-page semantic architecture |
+| **CSS3** | Flexbox, modular `@import` rules, root variables, glassmorphism UI |
+| **JavaScript (ES6+)** | Dynamic DOM rendering, ES Modules (`import`/`export`), Event Listeners |
+| **LocalStorage API** | Persistent client-side cart & order management |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How to Run Locally
 
-No build tools or package manager required. This is a plain static website.
+Because the project relies on **native ES Modules** (`type="module"`), pages must be served via a local web server (to satisfy browser CORS rules for module loading).
 
-1. **Clone the repository**
+1. **Clone the project repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/ABHI-JURO/SHOES_STORE.git
    cd WEBSITE
    ```
 
-2. **Open in browser**
-   Simply open `HTML/HOME.html` in your browser.
-
-   > ⚠️ Because the JS files use `type="module"`, you **must** serve the files through a local server (not `file://`) to avoid CORS issues with ES Modules.
-
-3. **Use a local server** (recommended)
-   ```bash
-   # Using VS Code Live Server extension — right-click HOME.html → Open with Live Server
-   # OR using Python
-   python -m http.server 5500
-   # then navigate to http://localhost:5500/HTML/HOME.html
-   ```
-
----
-
-## 📌 Design Highlights
-
-- **Frosted-glass navigation bar** with blur and transparency effect
-- **Hero section** with full-screen background image and brand tagline
-- **Product cards** with hover effects and category filtering
-- **Responsive layouts** with CSS Flexbox
-- **Consistent typography** using `Bebas Neue` for headings
+2. **Serve using a local HTTP server**:
+   * **VS Code**: Right-click `HTML/HOME.html` → **Open with Live Server**.
+   * **Python**:
+     ```bash
+     python -m http.server 5500
+     ```
+     Open `http://localhost:5500/HTML/HOME.html` in your browser.
+   * **Node.js**:
+     ```bash
+     npx serve .
+     ```
 
 ---
 
 ## 👤 Author
 
-**Abhishek**
-Designed and developed as a front-end development project to practise building a real-world multi-page website using only HTML, CSS, and JavaScript — no frameworks.
-
----
-
-## 📄 License
-
-This project is for **educational/personal use** only. All brand names, product names, and images are fictional and used for demonstration purposes.
+**Abhishek**  
+Front-end website built with modular CSS architecture, ES Modules, and native DOM manipulation.
