@@ -1,7 +1,7 @@
-@import url('../GLOBAL-CSS/HEADER.css');
-@import url('../GLOBAL-CSS/FOOTER.css');
-@import url('../GLOBAL-CSS/NEWSLETTER.css');
-@import url('../GLOBAL-CSS/PRODUCTS.css');
+@import url('./HEADER.css');
+@import url('./FOOTER.css');
+@import url('./NEWSLETTER.css');
+@import url('./PRODUCTS.css');
 
 /*
 ===========================
